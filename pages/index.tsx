@@ -1,7 +1,7 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
@@ -12,47 +12,70 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.flex_container}>
-      <div className={styles.main_container}>
-      <main className={styles.main}>
-        <h1>HELP!</h1>
-        <h2>My Thomas is misbehaving!</h2>
-      <div>
-        <p>
-          <em>"Help, Thomas isn't working!"</em> We've heard this before.
-          Below, you'll find some helpful troubleshooting tips.
-        </p>
-          <p>
-          <strong>Thomas is freaking out for no reason!</strong>
-        </p>
+        <div className={styles.main_container}>
+          <main className={styles.main}>
+            <h1>HELP!</h1>
+            <h2>My Thomas is misbehaving!</h2>
+            <div>
+              <p>
+                <em>{`"Help, Thomas isn't working!"`}</em>{" "}
+                {`We've heard this before.`}
+                {`Below, you'll find some helpful troubleshooting tips.`}
+              </p>
+              <p>
+                <strong>Thomas is freaking out for no reason!</strong>
+              </p>
 
-        <p>
-          Check out some of the tips below... if all else fails, he might need a nap!
-        </p>
-        <p>
-          <strong>Thomas started crying and freaking out while on a trip!</strong>
-        </p>
+              <p>
+                Check out some of the tips below... if all else fails, he might
+                need a nap!
+              </p>
+              <p>
+                <strong>{`Thomas keeps grumbling about how his 'arms feel weird'.`}</strong>
+              </p>
 
-        <p>
-          Thomas's mental health is tightly bound to his sense of control over his environment.</p>
-          <p>Unfortunately, if this happens, you may just need to send your Thomas back.
-        </p>
-        <p>
-          <strong>Thomas keeps grumbling about how his 'arms feel weird'.</strong>
-        </p>
+              <p>
+                {`Thomas's arms feel weird when he hasn't exercised in a while.`}
+              </p>
+              <p>Try telling him to go on a run (or do some pushups)!</p>
 
-        <p>
-          Thomas's arms feel weird when he hasn't exercised in a while.
-        </p>
-        <p>
-          Try telling him to go on a run (or do some pushups)!
-        </p>
-      </div>
-      </main></div>
-      <div className="side">
-        <div className={styles.pic}>
-        <Image src="/help_computer.png" alt="Confused Thomas" width="400px" height="300px" />
-        </div></div>
+              <p>
+                <strong>Thomas is in a bad mood for no apparent reason.</strong>
+              </p>
+
+              <p>
+                Remember RED! “Have you gone for a <strong>RUN?</strong>” “Have
+                you <strong>EATEN</strong>?” “When was the last time you{" "}
+                <strong>DRANK</strong> water?”
+              </p>
+
+              <p>
+                <strong>
+                  Thomas started crying and freaking out while on a trip!
+                </strong>
+              </p>
+
+              <p>
+                {`Thomas's mental health is tightly bound to his sense of control over his environment.`}
+              </p>
+              <p>
+                Unfortunately, if this happens, you may just need to send your
+                Thomas back.
+              </p>
+            </div>
+          </main>
         </div>
+        <div className="side">
+          <div className={styles.pic}>
+            <Image
+              src="/help_computer.png"
+              alt="Confused Thomas"
+              width="400px"
+              height="300px"
+            />
+          </div>
+        </div>
+      </div>
       {/* <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -65,7 +88,7 @@ const Home: NextPage = () => {
         </a>
       </footer> */}
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

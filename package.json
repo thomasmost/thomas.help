@@ -31,10 +31,5 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "eslintConfig": {
-    "rules": {
-      "react/no-unescaped-entities": "off"
-    }
   }
 }

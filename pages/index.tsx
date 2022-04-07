@@ -11,7 +11,7 @@ const Home: NextPage = () => {
     setTimeout(() => {
       setCovidError("FUCK!");
     }, 2000);
-  });
+  }, []);
 
   if (covidError === "FUCK!") {
     return (
@@ -31,6 +31,9 @@ const Home: NextPage = () => {
 
               <h1>519 Error</h1>
               <h2 className="blinking">A Virus Has Been Detected!</h2>
+              <button onClick={() => setCovidError("")}>
+                Get me out of here!
+              </button>
             </main>
           </div>
         </div>
@@ -74,12 +77,13 @@ const Home: NextPage = () => {
                 {`Below, you'll find some helpful troubleshooting tips.`}
               </p>
               <p>
-                <strong> 1. Thomas is freaking out for no reason!</strong>
+                <strong> 1. Thomas started crying for no reason!</strong>
               </p>
 
               <p>
-                Check out some of the tips below... if all else fails, he might
-                need a nap!
+                This may not be cause for alarm. Thomas actually likes crying,
+                so he may just be having a nice time! Otherwise, check out some
+                of the tips below... if all else fails, he might need a nap!
               </p>
               <p>
                 <strong>
@@ -96,20 +100,19 @@ const Home: NextPage = () => {
               <p>
                 <strong>
                   {" "}
-                  3. Thomas is in a bad mood for no apparent reason.
+                  3. Thomas keeps staring at the dishwasher and sighing.
                 </strong>
               </p>
 
               <p>
-                Remember R.E.D! “Have you gone for a <strong>RUN?</strong>”
-                “Have you <strong>EATEN</strong>?” “When was the last time you{" "}
-                <strong>DRANK</strong> water?”
+                Just tell him to unstack the dishwasher! He&apos;ll feel better
+                as soon as he unstacks the dishwasher!
               </p>
 
               <p>
                 <strong>
                   {" "}
-                  4. Thomas started crying and freaking out while on a trip!
+                  4. Thomas started freaking out while on a trip!
                 </strong>
               </p>
 

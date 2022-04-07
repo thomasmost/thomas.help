@@ -25,7 +25,11 @@ a {
   transform: rotate(20deg);
 }
 
-.site-title {
+p {
+  line-height: 1.5em;
+}
+
+button .site-title {
   font-style: italic;
   font-family: cursive;
   text-align: left;
@@ -46,4 +50,9 @@ a {
   90% {
     opacity: 1;
   }
+}
+
+button {
+  font-size: 1em;
+  margin-top: 40px;
 }

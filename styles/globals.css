@@ -29,7 +29,7 @@ p {
   line-height: 1.5em;
 }
 
-button .site-title {
+.site-title {
   font-style: italic;
   font-family: cursive;
   text-align: left;

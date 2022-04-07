@@ -62,7 +62,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.flex_container}>
-        <div className={styles.main_container}>
+        <div className={styles.main_container} style={{ zIndex: 1 }}>
           <main className={styles.main}>
             <h1 className="site-title">Support for your TCM</h1>
             <h1>HELP!</h1>
@@ -123,8 +123,11 @@ const Home: NextPage = () => {
             </div>
           </main>
         </div>
-        <div className="side">
-          <div className={styles.pic}>
+        <div className="side" style={{ zIndex: 0 }}>
+          <div
+            className={styles.pic}
+            style={{ opacity: 0.4, position: "fixed" }}
+          >
             <Image
               src="/help_computer.png"
               alt="Confused Thomas"

@@ -30,6 +30,10 @@ a {
   font-family: cursive;
   text-align: left;
   width: 100%;
+  color: white;
+  background-color: #967bb6;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
 }
 
 @keyframes blinker {

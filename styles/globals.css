@@ -14,3 +14,32 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.blinking {
+  animation: blinker 1s linear infinite;
+  color: red;
+  text-align: center;
+}
+
+.skewed {
+  transform: rotate(20deg);
+}
+
+.site-title {
+  font-style: italic;
+  font-family: cursive;
+  text-align: left;
+  width: 100%;
+}
+
+@keyframes blinker {
+  10% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+}
